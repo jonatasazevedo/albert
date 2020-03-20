@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Material">
+
+    <Button
+        android:id="@+id/activity_material_botao_sair"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fundo_azul"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@color/azul_botao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_materia"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fundo_azul"
+        app:layout_constraintEnd_toEndOf="@id/fundo_azul"
+        app:layout_constraintStart_toStartOf="@id/fundo_azul"
+        app:layout_constraintTop_toTopOf="@id/fundo_azul"
+        app:srcCompat="@drawable/chapeu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTopico"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fundo_azul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

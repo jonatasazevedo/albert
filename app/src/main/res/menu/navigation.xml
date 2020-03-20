@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_feed"
+        android:icon="@drawable/feed"
+        android:title="Feed"
+        />
+
+    <item
+        android:id="@+id/navigation_material"
+        android:icon="@drawable/material"
+        android:title="Material"
+        />
+
+    <item
+        android:id="@+id/navigation_palestra"
+        android:icon="@drawable/palestra"
+        android:title="Palestra"
+        />
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/perfil"
+        android:title="Perfil"
+        />
+</menu>

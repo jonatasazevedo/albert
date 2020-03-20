@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jkr.albert">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/chapeu"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/chapeu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Texto_Conteudo"></activity>
+        <activity android:name=".ui.Material" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.Contribuir" />
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.EsqueceuSenha" />
+        <activity android:name=".ui.Novo_Projeto" />
+        <activity android:name=".ui.Cadastro" />
+        <activity android:name=".ui.Tela_Principal_botton" />
+        <activity android:name=".ui.Projetos" />
+        <activity android:name=".ui.Login" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

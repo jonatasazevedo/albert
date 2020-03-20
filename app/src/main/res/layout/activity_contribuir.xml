@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Contribuir">
+
+    <Button
+        android:id="@+id/activity_contribuir_botao_sair"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/contribuir_progresso_doacao"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:progress="80"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/activity_contribuir_imagem"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/loader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/txt_contribuir_titulo_projeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/azul_botao"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contribuir_progresso_doacao" />
+
+    <TextView
+        android:id="@+id/txt_contribuir_dono_projeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/azul_botao"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contribuir_titulo_projeto" />
+
+    <EditText
+        android:id="@+id/input_valor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_input"
+        android:hint="@string/valor"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contribuir_dono_projeto" />
+
+    <EditText
+        android:id="@+id/input_contribuir_numagencia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_input"
+        android:hint="@string/numagencia"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_valor" />
+
+    <Button
+        android:id="@+id/botao_doar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/botao_azul"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/doar"
+        android:textColor="@color/preto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/obstransf"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_contribuir_numagencia" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

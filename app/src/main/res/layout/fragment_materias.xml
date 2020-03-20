@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_black_italic"
+            android:text="@string/materias"
+            android:textColor="@color/preto"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/bt_lingua_portuguesa"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:onClick="onclick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/linguaportuguesa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/txt_linguaportuguesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linguaportuguesa"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_lingua_portuguesa"
+            app:layout_constraintStart_toStartOf="@+id/bt_lingua_portuguesa"
+            app:layout_constraintTop_toBottomOf="@+id/bt_lingua_portuguesa" />
+
+        <ImageButton
+            android:id="@+id/bt_matematica"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/matematica"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/txt_matematica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/matematica"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_matematica"
+            app:layout_constraintStart_toStartOf="@+id/bt_matematica"
+            app:layout_constraintTop_toBottomOf="@+id/bt_matematica" />
+
+        <ImageButton
+            android:id="@+id/bt_artes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_linguaportuguesa"
+            app:srcCompat="@drawable/artes" />
+
+        <TextView
+            android:id="@+id/txt_artes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artes"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_artes"
+            app:layout_constraintStart_toStartOf="@+id/bt_artes"
+            app:layout_constraintTop_toBottomOf="@+id/bt_artes" />
+
+        <ImageButton
+            android:id="@+id/bt_historia"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/historia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_matematica" />
+
+        <TextView
+            android:id="@+id/txt_historia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/historia"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_historia"
+            app:layout_constraintStart_toStartOf="@+id/bt_historia"
+            app:layout_constraintTop_toBottomOf="@+id/bt_historia" />
+
+        <ImageButton
+            android:id="@+id/bt_filosofia"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_artes"
+            app:srcCompat="@drawable/filosofia" />
+
+        <TextView
+            android:id="@+id/txt_filosofia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filosofia"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_filosofia"
+            app:layout_constraintStart_toStartOf="@+id/bt_filosofia"
+            app:layout_constraintTop_toBottomOf="@+id/bt_filosofia" />
+
+        <ImageButton
+            android:id="@+id/bt_geografia"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/geografia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_historia" />
+
+        <TextView
+            android:id="@+id/txt_geografia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geografia"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_geografia"
+            app:layout_constraintStart_toStartOf="@+id/bt_geografia"
+            app:layout_constraintTop_toBottomOf="@+id/bt_geografia" />
+
+        <ImageButton
+            android:id="@+id/bt_quimica"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/quimica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_filosofia" />
+
+        <TextView
+            android:id="@+id/txt_quimica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quimica"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_quimica"
+            app:layout_constraintStart_toStartOf="@+id/bt_quimica"
+            app:layout_constraintTop_toBottomOf="@+id/bt_quimica" />
+
+        <ImageButton
+            android:id="@+id/bt_biologia"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/biologia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_geografia" />
+
+        <TextView
+            android:id="@+id/txt_biologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biologia"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_biologia"
+            app:layout_constraintStart_toStartOf="@+id/bt_biologia"
+            app:layout_constraintTop_toBottomOf="@+id/bt_biologia" />
+
+        <ImageButton
+            android:id="@+id/bt_fisica"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fisica"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_quimica" />
+
+        <TextView
+            android:id="@+id/txt_fisica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/fisica"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bt_fisica"
+            app:layout_constraintStart_toStartOf="@+id/bt_fisica"
+            app:layout_constraintTop_toBottomOf="@+id/bt_fisica" />
+
+        <ImageButton
+            android:id="@+id/bt_sociologia"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/botao_azul_circular"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sociologia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_biologia" />
+
+        <TextView
+            android:id="@+id/txt_sociologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/Sociologia"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bt_sociologia"
+            app:layout_constraintStart_toStartOf="@+id/bt_sociologia"
+            app:layout_constraintTop_toBottomOf="@+id/bt_sociologia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

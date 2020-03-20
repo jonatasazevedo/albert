@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinza_recycler"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_pai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_recycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_background"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/azul_botao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/fragment_perfil_botao_deslogar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_sair"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.609"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/albert" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/fragment_perfil_botao_novo_projeto"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/botao_azul"
+                android:padding="5dp"
+                android:text="@string/novo_projeto"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_background" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragment_perfil_img_usuario"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/ic_user"
+                app:civ_border_color="@color/azul_botao"
+                app:civ_border_width="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraint_dados" />
+
+            <TextView
+                android:id="@+id/fragment_perfil_nome_usuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textAlignment="viewStart"
+                android:textColor="@color/preto"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/fragment_perfil_botao_novo_projeto"
+                app:layout_constraintStart_toEndOf="@+id/fragment_perfil_img_usuario"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_background" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_dados">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerperfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/cinza_recycler"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

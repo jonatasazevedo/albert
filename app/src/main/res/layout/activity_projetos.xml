@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/activity_projetos_botao_sair"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/projetos_progresso_doacao"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="16dp"
+        android:progress="80"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/activity_projetos_imagem"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/loader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_projetos_titulo_projeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/azul_botao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projetos_progresso_doacao" />
+
+    <TextView
+        android:id="@+id/txt_projetos_dono_projeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/azul_botao"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_projetos_titulo_projeto" />
+
+    <ImageView
+        android:id="@+id/barra_preta"
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/preto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_projetos_dono_projeto" />
+
+    <TextView
+        android:id="@+id/txt_projeto_objetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/barra_preta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_projetos_dono_projeto" />
+
+    <TextView
+        android:id="@+id/txt_projeto_arrecadado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/azul_botao"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barra_preta"
+        app:layout_constraintTop_toBottomOf="@+id/txt_projetos_dono_projeto" />
+
+    <Button
+        android:id="@+id/botao_contribuir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/botao_azul"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/contribuir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_preta" />
+
+    <Button
+        android:id="@+id/botao_excluir"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

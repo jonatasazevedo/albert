@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundotela">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_login_img_albert"
+            android:layout_width="297dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chapeu"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/activity_login_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/textfields"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_login_img_albert" />
+
+        <EditText
+            android:id="@+id/activity_login_txt_senha"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/textfields"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_login_text_email" />
+
+        <Button
+            android:id="@+id/activity_login_botao_entrar"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/botao_branco"
+            android:text="@string/entrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_login_txt_senha"
+            app:layout_constraintVertical_bias="0.29000002" />
+
+        <Button
+            android:id="@+id/activity_login_botao_esqueci_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="0dp"
+            android:padding="6dp"
+            android:text="@string/esq_senha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_login_botao_entrar"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <Button
+            android:id="@+id/activity_login_botao_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="0dp"
+            android:padding="6dp"
+            android:text="@string/sem_conta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_login_botao_esqueci_senha"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

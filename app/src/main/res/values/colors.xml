@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#A3A3A3</color>
+    <color name="colorAccent">#6490FF</color>
+    <color name="azul_botao">#009FC2</color>
+    <color name="fundotela">#CC009FC2</color>
+    <color name="preto">#000</color>
+    <color name="cinza">#757B7575</color>
+    <color name="cinza_recycler">#DDDDDD</color>
+</resources>
