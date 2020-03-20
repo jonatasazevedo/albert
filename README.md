@@ -1,4 +1,4 @@
-#Project Albert
+# Project Albert
 
 Devs: Jônatas Lima, Rebeca Pedrosa
 Designer : Kamila Artiago
