@@ -1,6 +1,6 @@
 # Project Albert
 
-Devs: Jônatas Lima, Rebeca Pedrosa<br> 
+Devs: Jônatas Lima and Rebeca Pedrosa<br> 
 Designer : Kamila Artiago<br>
 
 App was done in Java/XML (Android)<br>
